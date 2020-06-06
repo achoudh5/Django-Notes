@@ -115,7 +115,7 @@
  		  - Hence, we will use the POST data instead now
 
  		  - use method='post' in the form action (only this won't suffice, CSRF attack vulnerable) 
- 		  + {% csrf_token%} under home.html + change the GET to post under function addition(in this case) in views.py
+ 		  + `{% csrf_token%}` under home.html + change the GET to post under function addition(in this case) in views.py
 
  		 - So, whenever we post data we use POST and fetch data we use GET
 
